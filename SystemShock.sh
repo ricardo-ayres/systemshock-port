@@ -66,6 +66,8 @@ export XDG_DATA_HOME="$CONFDIR"
 # With -c we assign a custom mapping file else gptokeyb will only run as a tool to kill the process.
 # For $ANALOGSTICKS we have the ability to supply multiple gptk files to support 1 and 2 analogue stick devices in different ways.
 # For a proper documentation how gptokeyb works: [Link](https://github.com/PortsMaster/gptokeyb)
+# Ensure HOTKEY is unset, it should default to select
+export HOTKEY="select"
 $GPTOKEYB2 "systemshock.${DEVICE_ARCH}" -c "./sshock.ini" &
 
 # Do some platform specific stuff right before the port is launched but after GPTOKEYB is run.
