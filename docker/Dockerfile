@@ -1,4 +1,4 @@
-FROM debian:stable
+FROM debian:oldstable
 
 # Setup workdir
 RUN echo 'PS1="\w\n\$> "' >> /etc/bash.bashrc

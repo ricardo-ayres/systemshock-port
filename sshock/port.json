@@ -18,7 +18,12 @@
     "genres": [
       "fps"
     ],
-    "image": null,
+    "image": {
+        "screenshot": "screenshot.png",
+        "covers": [ "cover.jpg" ],
+        "thumbnail": null,
+        "video": null
+    },
     "rtr": false,
     "exp": false,
     "runtime": [],

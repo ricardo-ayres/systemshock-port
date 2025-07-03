@@ -17,8 +17,8 @@ If you wish to do it manually:
 Build and run the docker image:
 
 ```
-docker build . --platform linux/arm64 -t systemshock
 docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
+docker build . --platform linux/arm64 -t systemshock
 docker run --platform=linux/arm64 --name systemshock systemshock /bin/bash -c 'cmake . && make -j4'
 ```
 
