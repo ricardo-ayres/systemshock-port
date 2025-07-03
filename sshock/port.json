@@ -13,8 +13,8 @@
     ],
     "desc": "System Shock source port (Shockolate: https://github.com/Interrupt/systemshock) based on the GPL'd Mac sources.",
     "desc_md": "System Shock source port ([Shockolate](https://github.com/Interrupt/systemshock)) based on the GPL'd Mac sources.",
-    "inst": "Copy the contents of the classic edition SSHOCK/DATA/ directory into rel/data/ and run the game.",
-    "inst_md": "Copy the contents the classic edition SSHOCK/DATA/ directory into rel/data/ and run the game.",
+    "inst": "Copy the contents of the classic edition SSHOCK/DATA/ directory into res/data/ and run the game.",
+    "inst_md": "Copy the contents the classic edition SSHOCK/DATA/ directory into res/data/ and run the game.",
     "genres": [
       "fps"
     ],
