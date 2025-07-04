@@ -8,7 +8,7 @@ docker build . --platform linux/arm64 -t systemshock && \
 docker run --platform=linux/arm64 --name systemshock systemshock /bin/bash -c 'cmake . && make -j4' && \
 
 # copy the binary out of the container
-docker cp `docker ps -q -l`:/root/systemshock/systemshock ../sshock/systemshock.aarch64 && \
+docker cp `docker ps -q -l`:/root/systemshock/systemshock ../sshock/sshock.aarch64 && \
 
 # package into sshock.zip
 pushd ..

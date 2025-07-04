@@ -68,16 +68,16 @@ export XDG_DATA_HOME="$CONFDIR"
 # For a proper documentation how gptokeyb works: [Link](https://github.com/PortsMaster/gptokeyb)
 # Ensure HOTKEY is unset, it should default to select
 export HOTKEY="select"
-$GPTOKEYB2 "systemshock.${DEVICE_ARCH}" -c "./sshock.ini" &
+$GPTOKEYB2 "sshock.${DEVICE_ARCH}" -c "./sshock.ini" &
 
 # Do some platform specific stuff right before the port is launched but after GPTOKEYB is run.
-pm_platform_helper "$GAMEDIR/systemshock.${DEVICE_ARCH}"
+pm_platform_helper "$GAMEDIR/sshock.${DEVICE_ARCH}"
 
 # Port specific additional libraries should be included within the port's directory in a separate subfolder named libs.aarch64, libs.armhf or libs.x64
 export LD_LIBRARY_PATH="$GAMEDIR/libs.${DEVICE_ARCH}:$LD_LIBRARY_PATH"
 
 # Now we launch the port's executable with multiarch support. Make sure to rename your file according to the architecture you built for. E.g. portexecutable.aarch64
-./systemshock.${DEVICE_ARCH} -f # Launch the executable
+./sshock.${DEVICE_ARCH} -f # Launch the executable
 
 # Cleanup any running gptokeyb instances, and any platform specific stuff.
 pm_finish

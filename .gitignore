@@ -2,5 +2,5 @@
 sshock/res/data/*
 
 # ignore the binary and the packaged version
-sshock/systemshock.aarch64
+sshock/sshock.aarch64
 docker/sshock.zip
