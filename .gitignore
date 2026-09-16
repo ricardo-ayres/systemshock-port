@@ -1,2 +1,5 @@
 # ignore copyrighted materials
 sshock/res/data/*
+
+# ignore package if it exists
+sshock.zip
