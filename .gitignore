@@ -1,6 +1,2 @@
 # ignore copyrighted materials
 sshock/res/data/*
-
-# ignore the binary and the packaged version
-sshock/sshock.aarch64
-docker/sshock*.zip

@@ -5,5 +5,7 @@ This just packages the great work done in the System Shock
 [Interrupt](https://github.com/Interrupt) with adjusted defaults for
 portmaster.
 
-Build instructions on [systemshock-port-builder]() repo.
+Build instructions on
+[systemshock-port-builder](https://github.com/ricardo-ayres/systemshock-port-builder)
+repo.
 
